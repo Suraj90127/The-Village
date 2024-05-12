@@ -1,0 +1,89 @@
+:root {
+    --white: #ffffff;
+    --fs15px: 15px;
+    --fs20px: 20px;
+    --fs25px: 25px;
+    --fs30px: 30px;
+    --fs35px: 35px;
+    --fw5: 500;
+    --fw6: 600;
+    --fw7: 700;
+    --fw8: 800;
+    --fw9: 900;
+    --greend: #428e20;
+    --greenl: #91c72e;
+    --yellows: #ffed4e;
+    --chaklote: #cdb78f;
+    --chakloted: #3f231b;
+}
+
+/* color: var(--blue); */
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 80px;
+    border-bottom: 1px solid gray;
+
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+.color-gray {
+    color: gray;
+}
+
+nav .logo {
+    width: 100px;
+}
+
+input:focus {
+    outline: none;
+}
+
+nav .nav-list {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-list li {
+    padding: 13px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--chakloted);
+}
+
+nav .nav-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-search input {
+    border: 1px solid gray;
+    padding: 4px 10px;
+}
+
+
+nav .nav-search .nav-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-search .nav-account li {
+    margin: 0 5px;
+}
+
+.css-zza0ns-MuiBadge-badge {
+    background-color: var(--greend) !important;
+}
+
+.css-1abqjyq-MuiBadge-badge {
+    background-color: var(--greend) !important;
+}
