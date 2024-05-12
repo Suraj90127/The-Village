@@ -6,11 +6,13 @@ import { CiSearch } from "react-icons/ci";
 import { LuRefreshCw } from "react-icons/lu";
 import {Link} from "react-router-dom"
 import ProductImg from '../../assets/product.jpg'
+import { RiArrowRightSLine } from 'react-icons/ri';
 
 const Product = () => {
   return (
-    <div>
-      <main className=' bg-white pt-15 pb-9 flex lg:flex-row mat-50 justify-center items-start w-full sm:flex-col'>
+    <div className=''>
+        <div className='flex px-3 items-center mat-50 text-base mb-4'> <Link className='text-base'>Home</Link> <RiArrowRightSLine /> <span className='text-sm'>Shop</span></div>
+      <main className=' bg-white pt-15 pb-9 flex lg:flex-row  justify-center items-start w-full sm:flex-col'>
         <div className='pl-3 pr-5 bg-white w-[25%]'>
             <div className='p-[30px] mb-6 border-[1px] border-[#d7d7d7] rounded-md'>
                 <div className='mb-5'>
@@ -481,8 +483,8 @@ const Product = () => {
                             </div>
                         </div>
                         <div>
-                            <div className='px-[18px] py-[15px] text-[14px] font-medium text-[#1b8057] bg-[#f3f9f9] rounded-[50px] flex justify-center items-center hover:text-white hover:bg-[#1b8057]'>
-                                <Link to="">Select options</Link>
+                            <div className='px-[18px] py-[15px] text-[14px] font-medium text-[#1b8057] bg-[#f3f9f9] rounded-[50px] flex justify-center items-center hover:text-white hover:bg-[#1b8057] group'>
+                                <Link to="" className='group-hover:text-white'>Select options</Link>
                             </div>
                         </div>
                     </div>
@@ -552,12 +554,13 @@ const Product = () => {
                             </div>
                         </div>
                         <div>
-                            <div className='px-[18px] py-[15px] text-[14px] font-medium text-[#1b8057] bg-[#f3f9f9] rounded-[50px] flex justify-center items-center hover:text-white hover:bg-[#1b8057]'>
-                                <Link to="">Select options</Link>
+                            <div className='px-[18px] py-[15px] text-[14px] font-medium text-[#1b8057] bg-[#f3f9f9] rounded-[50px] flex justify-center items-center hover:text-white hover:bg-[#1b8057] group'>
+                                <Link to="" className='group-hover:text-white'>Select options</Link>
                             </div>
                         </div>
                     </div>
                 </li>
+              
 
                 
             </ul>

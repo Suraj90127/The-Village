@@ -6,6 +6,8 @@ import Home from './page/home/Home';
 import Footer from './layout/Footer';
 import Product from './page/shop/Product';
 import ProductDetails from './page/shop/ProductDetails';
+import Login from './page/user/Login';
+import SignUp from './page/user/Register';
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/shop' element={<Product />} />
         <Route path='/shop-details' element={<ProductDetails />} />
-      
-      </Routes>
+        <Route path='/login' element={<Login />} />
+        <Route path='/sign-up' element={<SignUp />} />
+            </Routes>
       <Footer />
     </>
   );

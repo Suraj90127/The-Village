@@ -49,34 +49,93 @@ nav .nav-list {
     display: flex;
     align-items: center;
 }
-
+.all-cat-nav{
+    position: relative;
+}
+.all-cat-nav a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: space-between;
+border: 1px solid gray;
+padding: 10px 30px;
+border-radius: 30px;
+}
+.all-cat-nav a span{
+    margin: 0 5px;
+}
+.all-cat-nav .all-cat-list{
+    position: absolute;
+    border: none;
+    background-color: white;
+    width: 100%;
+    z-index: 55;
+    transition: all 0.5  linear;
+    visibility: hidden;
+}
+.all-cat-nav:hover .all-cat-list{
+    visibility: visible;
+}
+.all-cat-nav .all-cat-list li{
+    border-bottom: 1px solid gray;
+}
+.all-cat-nav .all-cat-list li a{
+    border: none;
+}
 nav .nav-list li {
     padding: 13px;
     font-size: 18px;
     font-weight: 600;
     color: var(--chakloted);
 }
+.nav-input-search{
+    width: 60%;
+  border: 1px solid var(--greend);
+  padding: 12px 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.nav-input-search input{
+    width: 80%;
+}
+.nav-input-search button{
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 15px;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: var(--greend);
+}
+.nav-input-search button:hover{
+    background-color: var(--greenl);
+}
 
-nav .nav-search {
+nav .nav-cart-sec {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav .nav-search input {
+nav .nav-cart-sec input {
     border: 1px solid gray;
     padding: 4px 10px;
 }
 
 
-nav .nav-search .nav-account {
+nav .nav-cart-sec .nav-account {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav .nav-search .nav-account li {
+nav .nav-cart-sec .nav-account li {
     margin: 0 5px;
 }
 
@@ -86,4 +145,66 @@ nav .nav-search .nav-account li {
 
 .css-1abqjyq-MuiBadge-badge {
     background-color: var(--greend) !important;
+}
+.nav-bottom {
+    background-color: gainsboro;
+    padding: 0 20px;
+}
+.nav-bottom .nav-list{
+display: flex;
+align-items: center;
+}
+.nav-bottom .nav-list a{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-bottom .right-dis{
+ display: flex;
+ align-items: center;
+}
+.nav-bottom .right-dis .dis{
+    margin-right: 10px;
+}
+.nav-bottom .right-dis .dis a{
+    font-size: 18px;
+}
+.nav-bottom .right-dis .dis svg{
+    font-size: 30px;
+}
+.nav-bottom .right-dis .toll-sec a{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.nav-bottom .right-dis .toll-sec a svg{
+    font-size: 28px;
+    margin-right: 5px;
+}
+.nav-bottom .right-dis .toll-sec{
+    font-size: 18px;
+    display: flex;
+    /* align-items: center; */
+    column-gap: 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 10% 35%);
+    background: var(--chakloted);
+    height: 60px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    color: white;
+    margin-right: -1px;
+    border-radius: 0 6px 6px 0;
+    padding: 0 24px 0 40px;
+}
+.nav-bottom .right-dis .toll-sec p{
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
