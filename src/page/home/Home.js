@@ -33,6 +33,7 @@ const Home = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        loop:true,
         speed: 500,
         autoplaySpeed: 2000,
         cssEase: "linear"
@@ -44,6 +45,7 @@ const Home = () => {
         slidesToScroll: 1,
         autoplay: true,
         speed: 500,
+        loop:true,
         autoplaySpeed: 2000,
         cssEase: "linear"
     };
