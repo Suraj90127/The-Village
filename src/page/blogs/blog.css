@@ -1,0 +1,13 @@
+
+.blog-sidebar {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+  
+  .blog-sidebar#fix {
+    position: fixed;
+    right: 0px;
+    bottom: 60%;
+  }
+  

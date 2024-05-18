@@ -25,6 +25,7 @@ import Marquee from "react-fast-marquee";
 import Certificate1 from "../../assets/BRC-Global-Logo.webp"
 import CategoryImg from "../../assets/category1.webp"
 import Recipes from "../../assets/recepi.webp"
+import Creation from './Creation';
 
 const Home = () => {
     var settings = {
@@ -135,7 +136,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
+<Creation/>
             {/* MOST LOVED LEGENDS  */}
             <div className="container-section mat-50">
                 <div className="most-legens-section">

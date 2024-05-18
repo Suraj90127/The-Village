@@ -102,14 +102,14 @@ const Navbar = () => {
               >
                 <FaUser />
               </li>
-              <li>
+              <li onClick={()=>navigate("/wishlist")}>
                 <IconButton aria-label="cart">
                   <StyledBadge badgeContent={4} color="secondary">
                     <FavoriteBorderIcon />
                   </StyledBadge>
                 </IconButton>
               </li>
-              <li className="cursor-pointer">
+              <li className="cursor-pointer" onClick={()=>navigate("/cart")}>
                 {" "}
                 <Badge badgeContent={8} color="primary">
                   <ShoppingCartIcon color="action" />
@@ -122,7 +122,7 @@ const Navbar = () => {
       <div className="nav-bottom flex items-center  justify-between">
         <ul className="nav-list">
           <li>
-            <Link>
+            <Link to={"/"}>
               Home <FaAngleDown />
             </Link>
           </li>
@@ -132,7 +132,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to={"/shop"}>
               Shop <FaAngleDown />
             </Link>
           </li>

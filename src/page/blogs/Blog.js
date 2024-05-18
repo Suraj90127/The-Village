@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Blog = () => {
+  const navigate=useNavigate()
   return (
     <div>
    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
@@ -23,7 +25,7 @@ const Blog = () => {
   </div>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
     {/* CARD 1 */}
-    <div className="rounded overflow-hidden shadow-lg flex flex-col">
+    <div className="rounded overflow-hidden shadow-lg flex flex-col" onClick={()=>navigate("/blog-details")}>
       <a href="#" />
       <div className="relative"><a href="#">
           <img className="w-full" src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Sunset in the mountains" />

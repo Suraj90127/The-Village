@@ -18,7 +18,10 @@ import ChangePassword from "./components/dashboard/ChangePassword";
 import { Chat } from "@mui/icons-material";
 import Contact from "./components/Contact";
 import Blog from "./page/blogs/Blog";
-
+import CartPage from "./page/cart/CartPage";
+import Wishlists from "./page/wishlist/Wishlists";
+import BlogDetails from "./page/blogs/BlogDetails";
+import Checkout from "./page/cart/Checkout";
 function App() {
   return (
     <>
@@ -32,6 +35,10 @@ function App() {
 
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/wishlist" element={<Wishlists />} />
+        <Route path="/blog-details" element={<BlogDetails />} />
+        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="/dashboard" element={<ProtectUser />}>
           <Route path="" element={<Dashboard />}>
